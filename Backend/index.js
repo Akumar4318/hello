@@ -2,7 +2,7 @@ const express=require('express')
 const app=express()
 const connectDB=require('./DataBase/database')
 require('dotenv').config()
-const PORT=process.env.PORT
+const PORT=process.env.PORT || 4000
 
 const cors=require('cors')
 const cookieParse=require('cookie-parser')
@@ -50,7 +50,7 @@ app.use("/api/v1/reach", contactUsRoute);
 app.get('/',(req,res)=>{
     return res.status(200).json({
         success:true,
-        message:'your server is up and running...'
+        message:'your server is up and running.....'
     })
 })
 
