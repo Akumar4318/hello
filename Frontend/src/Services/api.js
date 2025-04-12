@@ -1,4 +1,4 @@
-const BASE_URL = "https://hello-backend-k29x.onrender.com";
+const BASE_URL = import.meta.env.VITE_BASE_URL;
 
 // AUTH ENDPOINTS
 export const endpoints = {
