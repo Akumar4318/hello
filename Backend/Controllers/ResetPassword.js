@@ -37,7 +37,7 @@ exports.resetPasswordToken=async(req,res)=>{
       },{new:true})
       //? create url 
       // console.log("DETAILS", updatedDetails);
-      const url = `http://localhost:3000/update-password/${token}`;
+      const url = `https://hello-frontend-hznl.onrender.com/update-password/${token}`;
       //? send mail containing the url 
 
       
