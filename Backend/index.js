@@ -25,7 +25,7 @@ app.use(express.json())
 app.use(cookieParse())
 app.use(
 	cors({
-		origin:"https://hello-backend-k29x.onrender.com",
+		origin:"http://localhost:3000",
 		credentials:true,
 	})
 )
