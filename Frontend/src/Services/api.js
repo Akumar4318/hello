@@ -1,4 +1,4 @@
-const BASE_URL = "https://hello-backend-k29x.onrender.com/";
+const BASE_URL = "https://hello-backend-k29x.onrender.com";
 
 // AUTH ENDPOINTS
 export const endpoints = {
