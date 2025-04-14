@@ -124,11 +124,11 @@ const VideoDetailsSidebar = ({ setReviewModal }) => {
                 <div className="flex items-center gap-3">
                   {/* add arrow here */}
                   <span
-                    className={${
+                    className={`${
                       activeStatus === course?.sectionName
                         ? "rotate-0"
                         : "rotate-180"
-                    } transition-all duration-500}
+                    } transition-all duration-500`}
                   >
                     <BsChevronDown />
                   </span>
@@ -142,17 +142,17 @@ const VideoDetailsSidebar = ({ setReviewModal }) => {
                     <div
                       onClick={() => {
                         navigate(
-                          /view-course/${courseEntireData?._id}/section/${course._id}/sub-section/${topic?._id}
+                          `/view-course/${courseEntireData?._id}/section/${course._id}/sub-section/${topic?._id}`
                         );
 
                         setVideoBarActive(topic?._id);
                       }}
                       key={index}
-                      className={flex gap-4 p-5 ${
+                      className={`flex gap-4 p-5 ${
                         videobarActive === topic._id
                           ? "bg-yellow-200 text-richblack-900"
                           : "bg-richblack-900 text-white"
-                      }}
+                      }`}
                     >
                       <input
                         type="checkbox"
@@ -174,5 +174,3 @@ const VideoDetailsSidebar = ({ setReviewModal }) => {
 };
 
 export default VideoDetailsSidebar;
-
-
