@@ -25,7 +25,8 @@ app.use(express.json())
 app.use(cookieParse())
 app.use(
 	cors({
-		origin:"http://localhost:3000",
+
+		origin:"https://hello-frontend-hznl.onrender.com",
 		credentials:true,
 	})
 )
